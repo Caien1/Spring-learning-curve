@@ -3,6 +3,9 @@ package com.example.springSecurity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
 
 @RestController
 
@@ -19,8 +22,11 @@ public class HelloController {
 
     @GetMapping("/b")
 
-    public String greet(){
-        return "Endpoint two";
+    public String greet(HttpServletRequest req, HttpServletResponse res){
+        System.out.println(req.getSession().getId());
+
+
+        return "<h1> what up <h1>";
     }
    
     
