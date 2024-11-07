@@ -1,4 +1,4 @@
-package com.example.springSecurity;
+package com.example.springSecurity.controller;
 
 import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,4 +1,4 @@
-package com.example.springSecurity;
+package com.example.springSecurity.controller;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -8,8 +8,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.example.springSecurity.model.Student;
+
 @RestController
-public class DisplayStudent {
+public class StudentController {
 
        private List <Student> students = new ArrayList<>(List.of(
         new Student(1, "tellio", 0),
